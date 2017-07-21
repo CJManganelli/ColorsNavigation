@@ -14,9 +14,7 @@ class ColorTableViewController: UIViewController, UITableViewDelegate, UITableVi
     
     var colors: [Color] = [Color(colorLabel: "red", colorValue: UIColor.red), Color(colorLabel: "orange", colorValue: UIColor.orange), Color(colorLabel: "yellow", colorValue: UIColor.yellow), Color(colorLabel: "green", colorValue: UIColor.green), Color(colorLabel: "blue", colorValue: UIColor.blue), Color(colorLabel: "purple", colorValue: UIColor.purple), Color(colorLabel: "brown", colorValue: UIColor.brown)]
 
-    
-    
-    //var colors: [Colors] = [Colors.init(colorLabel: "red", colorValue: UIColor.red), Colors.init(colorLabel: "orange", colorValue: UIColor.orange), Colors.init(colorLabel: "yellow", colorValue: UIColor.yellow), Colors.init(colorLabel: "green", colorValue: UIColor.green), Colors.init(colorLabel: "blue", colorValue: UIColor.blue), Colors.init(colorLabel: "purple", colorValue: UIColor.purple), Colors.init(colorLabel: "brown", colorValue: UIColor.brown)]
+
     
     
     @IBOutlet weak var colorsTableView: UITableView!
@@ -53,11 +51,7 @@ class ColorTableViewController: UIViewController, UITableViewDelegate, UITableVi
         return cell
     }
     
-    /*
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.cellForRow(at: indexPath)?.isSelected = false
-    }
-    */
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? ColorDetailViewController,
@@ -68,15 +62,5 @@ class ColorTableViewController: UIViewController, UITableViewDelegate, UITableVi
     
     
     
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
